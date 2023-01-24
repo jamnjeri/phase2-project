@@ -65,7 +65,7 @@ ul {
     text-align: center;
 }
 
-.fab, .pages {
+.fab, .fa, .pages {
     color: var(--colorSix);
 }
 
