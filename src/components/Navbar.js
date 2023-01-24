@@ -8,11 +8,11 @@ function Navbar() {
     <div className="navbar">
         <img src={LOGO} className="logo" />
         <h1 className='title'>COVIDOLOGY</h1> 
-        <Link to={'/'}>Home</Link>
-        <Link to={'countries'}>Countries</Link>
-        <Link to={'map'}>Map</Link>
-        <Link to={'sign-up'}>Sign-Up</Link>
-        <Link to={'sign-in'}>Sign-In</Link>
+        <a href='./'>Home</a>
+        <a href='./countries'>Countries</a>
+        <a href='./map'>Map</a>
+        <a href='./sign-up'>Sign-Up</a>
+        <a href='./sign-in'>Sign-In</a>
     </div>
   )
 }
