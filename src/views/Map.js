@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer'
+import Mapping from '../components/Mapping'
 import Navbar from '../components/Navbar'
 
 function Map() {
@@ -7,7 +8,7 @@ function Map() {
     <>
     <Navbar />
     <>
-    
+   < Mapping />
     </>
     <Footer />
     </>
