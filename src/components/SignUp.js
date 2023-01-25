@@ -50,7 +50,7 @@ function SignUp() {
       };
   return (
     <div className='form-container'>
-        {isSubmit && <p>Success! You have signed up.</p>}
+        
         <form style={formStyles} onSubmit={handleSubmit}>
         <h3>Sign Up</h3>
         <div className="mb-3">
