@@ -40,17 +40,17 @@ function Globalsummary() {
             </thead>
             <tbody>
                 {
-                    // (data.Countries).map((item, index) => (
-                    //     // console.log(item)
-                    //     <Tableitems key={index}
-                    //         id ={item.ID}
-                    //         date ={item.Date}
-                    //         country = {item.Country}
-                    //         countryCode={item.CountryCode}
-                    //         totalCases={item.TotalConfirmed}
-                    //         totalDeaths={item.TotalDeaths}
-                    //     />
-                    // ))
+                    (data.Countries)?.map((item, index) => (
+                        // console.log(item)
+                        <Tableitems key={index}
+                            id ={item.ID}
+                            date ={item.Date}
+                            country = {item.Country}
+                            countryCode={item.CountryCode}
+                            totalCases={item.TotalConfirmed}
+                            totalDeaths={item.TotalDeaths}
+                        />
+                    ))
                 }
             </tbody>
         </table>
