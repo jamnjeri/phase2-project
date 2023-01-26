@@ -1,0 +1,80 @@
+:root {
+    --colorOne: #03045e;
+    --colorTwo: #0077b6;
+    --colorThree: #00b4d8;
+    --colorFour: #90e0ef;
+    --colorFive: #caf0f8;
+    --colorSix: #ffffff;
+    --colorSeven: #111111;
+    --colorEight: #c81d25;
+    --colorNine: #38b000;
+}
+
+.Description {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.Intro {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 700px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--colorFour);
+}
+
+.emphasis {
+    color: var(--colorSix);
+}
+
+.tag {
+    padding-left: 10px;
+}
+
+.section-title {
+    color: var(--colorThree);
+    /* border: 2px solid red; */
+}
+
+.symptoms {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    list-style: disc;
+}
+
+.Bcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ccontainer {
+    width: 90%;
+    /* width: 400px; */
+    padding: 20px;
+    background-color: var(--colorFour);
+    margin: 15px;
+    border-radius: 20px;
+    /* border: 2px solid red; */
+}
+
+.content {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorSeven);
+}
+
+.disclaimer {
+    color: var(--colorSix);
+}
