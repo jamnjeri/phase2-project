@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# COVIDOLOGY
+==========================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## DESCRIPTION
+**Covidology** is a COVID-19 tracker that provides data on global COVID-19 cases and deaths by country. It's main aim is to help people who are coping with the situation keep track of the spread of the virus around the world.
 
-## Available Scripts
+This project is the phase II capstone project at Moringa School of Technology. It's a compilation of the skills learnt through the software development course, in the second phase that covers the basics to React. It mainly puts focus on REACT.js for Front-end web programming, and has components of CSS and HTML.
 
-In the project directory, you can run:
+```
+https://github.com/jamnjeri/phase2-project
+```
 
-### `npm start`
+## REQUIREMENTS
+### Prerequisites
+* node v14.17.4 and above
+* npm 6.14.14 and above
+* Vue 2.6.11
+* Then install the various packages from package.json `npm install`
+* Create environment variables
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Additional Dependancies
+* React Router version 6 `npm install react-router-dom@6`
+* Axios  `npm install axios`
+* Chart.js  `npm install chart.js`
+* React chart.js  `npm install chart.js react-chartjs-2`
+* Leaflet  `npm i leaflet@1.6.0`
+* React Leaflet  `npm i react-leaflet@2.7.0`
+* Material-UI  `npm i @material-ui/core@4.11.0`
+* Numeral `npm i numeral`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+#### PROJECT DELIVERABLES
+The Covidology platform has a single user authentication mechanism for users accessing the site as surfers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As a user , one should able to:
+1. Register for & Login to the platform.
+2. View a landing page with general information on COVID-19.
+3. View a list of all countries affected by the pandemic.
+4. View a summary of all countries' cases in tabular format.
+5. Search for country specific data via a search interface.
+6. Visualize metric by aid of graphs.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### PROJECT-SETUP-INSTRUCTIONS
+1. [Clone the repo to your local machine](https://github.com/jamnjeri/phase2-project.git)
+2. Install required dependancies for by running `npm i`.
+3. Legacy dependencies may be installed by running `npm i -f`
+4. Run the application using  `npm start` to start the development server.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### TECHNOLOGIES-Used
+- HTML - Used as a template to hold the React components of the app via the root div. <br/>
+- CSS -used to style the User Interface. <br/>
+- JS - Java Script is used to make the website interactive. <br/>
+- REACT.js - Front-end Library. <br/>
+- ​Jest & Minitests - Testing Framework. <br/>
+- Git- For Version control
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### KNOWN - BUGS
+The API used to fetch data contains a fetch limit so the table data on the first page may sometimes generate a data when that limit is exceeded.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+There are no other known bugs, should you find any, please raise an issue or a pull request for evaluation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Support And Team Details
+---
+| No  |      Name      |                  Email                   |     Role        |
+| :-: | :------------: | :--------------------------------------: | :-----------:   |
+|  1  | Jamila Mathu   | jamila.mathu@student.moringaschool.com    | Home Page, Webpage template, Docs (Scrum Master)|
+|  2  |  Violet Bosire |  violet.bosire@student.moringaschool.com |  Docs and Authentication Pages |
+|  3  | Gregory Lubano | gregory.lubano@student.moringaschool.com | Country Page      |
+|  4  | Isaac Atuti    | isaac.atuti@student.moringaschool.com    | Map Page |
+---
 
-## Learn More
+### REFERENCES
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Status:
+    maintained, and is currently in development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Version:
+    v0.1.0
+    
+## Usage
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Copyright © 2023 COVIDOLOGY Inc.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Website Sample Images
+![Home Screen](./src/assets/HomePage1.png)
+![Home Screen](./src/assets/HomePage1.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Country Page](./src/assets/CountriesPage.png)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Maps Page](./src/assets/MapPage.png)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![LogIn Page](./src/assets/SignInPage.png)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![SignUp Page](./src/assets/SignUpPage.png)
