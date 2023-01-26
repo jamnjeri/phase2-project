@@ -2,7 +2,7 @@ import React from 'react'
 
 function Tableitems( { id, country, countryCode, date, totalCases, totalDeaths } ) {
 
-    console.log(country);
+    // console.log(country);
     
   return (
     <tr>

@@ -23,7 +23,7 @@ function Globalsummary() {
         })
     }
 
-    console.log(data.Countries)
+    // console.log(data.Countries)
 
   return (
     <div>
