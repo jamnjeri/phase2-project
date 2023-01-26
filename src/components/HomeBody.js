@@ -6,6 +6,7 @@ import Globalsummary from './Globalsummary'
 function HomeBody() {
   return (
     <div>
+      
       <Worldstats />
 
       <Globalsummary />
