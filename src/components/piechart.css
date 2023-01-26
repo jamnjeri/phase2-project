@@ -1,0 +1,28 @@
+:root {
+    --colorOne: #03045e;
+    --colorTwo: #0077b6;
+    --colorThree: #00b4d8;
+    --colorFour: #90e0ef;
+    --colorFive: #caf0f8;
+    --colorSix: #ffffff;
+    --colorSeven: #111111;
+    --colorEight: #c81d25;
+    --colorNine: #38b000;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    height: 30rem;
+}
+
+.pie-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    width: 600px;
+    height: 450px;
+}
