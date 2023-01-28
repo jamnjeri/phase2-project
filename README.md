@@ -58,7 +58,7 @@ As a user , one should able to:
 
 
 ### KNOWN - BUGS
-The API used to fetch data contains a fetch limit so the table data on the first page may sometimes generate a data when that limit is exceeded.
+The API used to fetch data contained a fetch limit so the table data on the first page may sometimes not generate data when that limit is exceeded.
 
 There are no other known bugs, should you find any, please raise an issue or a pull request for evaluation.
 
