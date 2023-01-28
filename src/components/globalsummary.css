@@ -15,3 +15,7 @@
     color: var(--colorThree);
     /* border: 2px solid red; */
 }
+
+.searchForm {
+    margin: 10px;
+}
