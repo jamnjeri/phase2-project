@@ -1,26 +1,41 @@
-import React from "react";
-
-import './Sign.css'
-
-
+import React, { useState } from "react";
+import { Route, useNavigate } from "react-router-dom";
+import "./Sign.css";
 
 function Login() {
+
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email || !password) {
+      setError(true);
+    } else {
+      navigate("/");
+    }
+  };
   
   const formStyles = {
     border: "1px solid skyblue",
     padding: "20px",
-    borderRadius:"10px"
+    borderRadius: "10px",
   };
+
   return (
     <div className="form-container">
       <form style={formStyles}>
         <h3>Sign In</h3>
+        {error && <p>Please fill all fields</p>}
         <div className="mb-3">
           <label>Email address</label>
           <input
             type="email"
             className="form-control"
             placeholder="johndoe@mail.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="mb-3">
@@ -29,6 +44,8 @@ function Login() {
             type="password"
             className="form-control"
             placeholder="***********"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="mb-3">
@@ -44,7 +61,7 @@ function Login() {
           </div>
         </div>
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
             Submit
           </button>
         </div>
@@ -52,9 +69,7 @@ function Login() {
           Forgot <a href="#">password?</a>
         </p>
       </form>
-    
     </div>
-  )
+  );
 }
-
-export default Login
+export default Login;
