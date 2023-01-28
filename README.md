@@ -91,7 +91,14 @@ Copyright © 2023 COVIDOLOGY Inc.
 
 ## Website Sample Images
 ![Home Screen](./src/assets/HomePage1.png)
-![Home Screen](./src/assets/HomePage1.png)
+
+![Home Screen](./src/assets/HomePage2.png)
+
+![Home Screen](./src/assets/HomePage(2.5).png)
+
+![Home Screen](./src/assets/HomePage3.png)
+
+![Home Screen](./src/assets/HomePage(3.5).png)
 
 
 ![Country Page](./src/assets/CountriesPage.png)
