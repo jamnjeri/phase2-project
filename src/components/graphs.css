@@ -9,3 +9,7 @@
     --colorEight: #c81d25;
     --colorNine: #38b000;
 }
+
+.pie-title {
+    color: var(--colorThree);
+}
