@@ -1,11 +1,15 @@
 import React, {useEffect, useState}from 'react'
 import './Sign.css'
+import { useNavigate } from 'react-router-dom';
+
 
 function SignUp() {
-    const initialValues = { firstname: "", lastname:"", email: "", password: "" };
+
+  const initialValues = { firstname: "", lastname:"", email: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const navigate =useNavigate()
       const handleSubmit=(e)=>{
         e.preventDefault()
         setFormErrors(validate(formValues))
@@ -15,6 +19,7 @@ function SignUp() {
         console.log(formErrors);
         if(Object.keys(formErrors).length === 0 && isSubmit){
             setFormValues(initialValues)
+            navigate('/')
         }
       },[formErrors])
       const validate=(values)=>{
@@ -36,21 +41,20 @@ function SignUp() {
         }
         return errors;
     }
-   
       const handleChange =(e)=>{
          const{name ,value }=e.target;
         setFormValues({ ...formValues, [name]:value})
         console.log(formValues)
-
       }
       const formStyles = {
         border: "1px solid skyblue",
         padding: "10px",
         borderRadius: "10px"
       };
+
+      
   return (
     <div className='form-container'>
-        
         <form style={formStyles} onSubmit={handleSubmit}>
         <h3>Sign Up</h3>
         <div className="mb-3">
@@ -67,10 +71,10 @@ function SignUp() {
         <p>{formErrors.firstname}</p>
         <div className="mb-3">
           <label>Last Name</label>
-          <input 
-           type="text" 
-           className="form-control" 
-           placeholder="Doe" 
+          <input
+           type="text"
+           className="form-control"
+           placeholder="Doe"
            name='lastname'
            value={formValues.lastname}
            onChange={handleChange}
@@ -109,10 +113,8 @@ function SignUp() {
         <p className="forgot-password text-right">
           Already registered <a href="/sign-in">sign in?</a>
         </p>
-        
-      </form>  
+      </form>
     </div>
   )
 }
-
 export default SignUp
